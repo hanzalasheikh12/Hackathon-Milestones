@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="resume">
+        <!-- Personal Information -->
+        <section class="personal-info">
+            <h2 onclick="toggleSection('personal-details')">Personal Information</h2>
+            <div id="personal-details" class="details show">
+                <img src="./hanzala.jpg" alt="Profile Picture" class="profile-picture">
+                <h3>Muhammad Hanzala</h3>
+                <p>Contact: hanzalas267@gmail.com | +92 317 1188641</p>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="education">
+            <h2 onclick="toggleSection('education-details')">Education</h2>
+            <div id="education-details" class="details show">
+                <p><strong>Matric:Sindh Board </strong> </p>
+                <p>School: Iqra Hadiqa-tul-Atfal, 2019</p>
+                <p><strong>INTERMEDIATE:Karachi Board </strong></p>
+                <p>College: Army Public College Saddar Karachi, 2021</p>
+                <p><strong>Degree: Bachelor of Science in Computer Science</strong> </p>
+                <p>University: Karachi Institute of Economics and Technology (KIET), 2024</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills">
+            <h2 onclick="toggleSection('skills-details')">Skills</h2>
+            <div id="skills-details" class="details show">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>E-commerce</li>
+                    <li>My SQL</li>
+                    <li>Next Js</li>
+                    <li>React JS</li>
+                    <li>C#</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section class="experience">
+            <h2 onclick="toggleSection('experience-details')">Work Experience</h2>
+            <div id="experience-details" class="details show">
+
+                <p><strong>Job Title:</strong>E-commerce</p>
+                <p><strong>Company:</strong> Daraz/Hamarz, 2023 - 2024</p>
+                <p><strong>Responsibilities:</strong> Manager.</p>
+                
+            </div>
+        </section>
+    </div>
+
+    <!-- Include the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
